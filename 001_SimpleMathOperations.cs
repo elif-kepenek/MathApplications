@@ -49,5 +49,28 @@ namespace MathAplications
                 return 0;
             }
         }
+
+        /// <summary>
+        /// Parametre olarak aldığı sayının asal sayı olup olmamasını kontrol eder.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Asal sayı</returns>
+        public static bool PrimeNumber (int n) {
+            if (n <= 1)
+            {
+                Console.WriteLine("En küçük asal sayı 2'dir.");
+                return false;
+            }
+
+            for (int i = 2; i < n; i++)
+            {
+                if (n % i == 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 }
