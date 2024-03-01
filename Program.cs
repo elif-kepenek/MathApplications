@@ -5,10 +5,8 @@
         static void Main (string[] args) {
 
             int n = Convert.ToInt32(Console.ReadLine());
-            if (Number.EvenNumber(n))
-            {
-                Console.WriteLine("Sayı çift");
-            }
+            Console.WriteLine("|{0}| = {1}", n, Number.AbsoluteValue(n));
+            
         }
     }
     
