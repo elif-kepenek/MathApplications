@@ -97,5 +97,9 @@ namespace MathAplications
                 t += i;
             return t;
         }
+
+        public static int FormulaSumOfNumbersUpTo_n (int n) {
+            return n * (n + 1) / 2;
+        }
     }
 }
