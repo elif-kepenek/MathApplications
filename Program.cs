@@ -5,7 +5,7 @@
         static void Main (string[] args) {
 
             int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("{0} sayının rakamlar toplamı: {1}", n, Number.SumOfDigits(n));
+            Console.WriteLine("1'den {0}'e kadar olan sayıların toplamı: {1}", n, Number.SumOfNumbersUpTo_n(n));
             
         }
     }

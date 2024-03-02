@@ -90,5 +90,12 @@ namespace MathAplications
             }
             return total;
         }
+
+        public static int SumOfNumbersUpTo_n (int n) {
+            int t = 0;
+            for (int i = 1; i <= n; i++)
+                t += i;
+            return t;
+        }
     }
 }
