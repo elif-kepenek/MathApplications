@@ -5,8 +5,7 @@
         static void Main (string[] args) {
 
             int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("{0}", 
-            Number.PrimeNumber(n) ? "Asal sayı": "Asal değil.");
+            Console.WriteLine("{0} sayının rakamlar toplamı: {1}", n, Number.SumOfDigits(n));
             
         }
     }

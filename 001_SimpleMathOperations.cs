@@ -72,5 +72,23 @@ namespace MathAplications
 
             return true;
         }
+
+        /// <summary>
+        /// Parametre olarak aldığı sayının rakamları toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Rakamlar toplamı</returns>
+        public static int SumOfDigits (int n) {
+            int total = 0;
+            int digit = 0;
+
+            while (n > 0)
+            {
+                digit = n % 10;
+                total += digit;
+                n = n / 10;
+            }
+            return total;
+        }
     }
 }
