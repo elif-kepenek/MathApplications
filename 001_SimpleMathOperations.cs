@@ -101,5 +101,17 @@ namespace MathAplications
         public static int FormulaSumOfNumbersUpTo_n (int n) {
             return n * (n + 1) / 2;
         }
+
+        public static int SumOfOddNumbersUpTo_n (int n) {
+            int t = 0;
+            for (int i = 1; i < n; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    t += i;
+                }
+            }
+            return t;
+        }
     }
 }
