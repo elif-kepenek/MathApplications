@@ -104,7 +104,7 @@ namespace MathAplications
 
         public static int SumOfOddNumbersUpTo_n (int n) {
             int t = 0;
-            for (int i = 1; i < n; i++)
+            for (int i = 1; i <= n; i++)
             {
                 if (i % 2 == 1)
                 {
@@ -112,6 +112,21 @@ namespace MathAplications
                 }
             }
             return t;
+        }
+
+        public static int SumOfOddNumbersUpTo_n1 (int n) {
+            int t = 0;
+            for (int i = 1; i <= n; i += 2)
+            {
+                t += i;
+            }
+            return t;
+        }
+
+        public static int FormulaForSumOfOddNumbersUpTo_n (int n) {
+            n += 1;
+            n = n / 2;
+            return n * n;
         }
     }
 }

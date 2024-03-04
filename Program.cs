@@ -6,6 +6,8 @@
 
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("1'den {0}'e kadar olan tek sayıların toplamı: {1}", n, Number.SumOfOddNumbersUpTo_n(n));
+            Console.WriteLine("1'den {0}'e kadar olan tek sayıların toplamı: {1}", n, Number.SumOfOddNumbersUpTo_n1(n));
+            Console.WriteLine("1'den {0}'e kadar olan tek sayıların toplamı: {1}", n, Number.FormulaForSumOfOddNumbersUpTo_n(n));
             
         }
     }
