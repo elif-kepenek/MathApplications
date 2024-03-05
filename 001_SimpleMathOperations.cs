@@ -128,5 +128,31 @@ namespace MathAplications
             n = n / 2;
             return n * n;
         }
+
+        public static int SumOfEvenNumbersUpTo_n (int n) {
+            int t = 0;
+            for (int i = 2; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    t += i;
+                }
+            }
+            return t;
+        }
+
+        public static int SumOfEvenNumbersUpTo_n1 (int n) {
+            int t = 0;
+            for (int i = 2; i <= n; i += 2)
+            {
+                t += i;
+            }
+            return t;
+        }
+
+        public static int FormulaForSumOfEvenNumbersUpTo_n (int n) {
+            n = n / 2;
+            return n * (n + 1);
+        }
     }
 }
