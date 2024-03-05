@@ -11,5 +11,14 @@ namespace MathAplications
         public static double PerimeterOfCircle (double r) {
             return 2 * pi * r;
         }
+
+        /// <summary>
+        /// Parametre olarak yarıçapı girlen dairenin alanını hesaplar.
+        /// </summary>
+        /// <param name="r">Yarıçap</param>
+        /// <returns>Dairenin alanı</returns>
+        public static double AreaOfTheCircle (double r) {
+            return pi * r * r;
+        }
     }
 }
