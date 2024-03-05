@@ -20,5 +20,15 @@ namespace MathAplications
         public static double AreaOfTheCircle (double r) {
             return pi * r * r;
         }
+
+        /// <summary>
+        /// Parametre olarak yarıçapı girlen dairenin alanını hesaplar.
+        /// </summary>
+        /// <param name="r">Yarıçap</param>
+        /// <param name="angle">Gördüğü açı</param>
+        /// <returns>Dairenin alanı</returns>
+        public static double AreaOfTheCircle (double r, double angle) {
+            return pi * r * r * angle / 360;
+        }
     }
 }
