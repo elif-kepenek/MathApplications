@@ -4,7 +4,7 @@ namespace MathAplications
         public const double pi = 3.14;
 
         /// <summary>
-        /// Yarıçapı girilen çevremberin çevresini hesaplar.
+        /// Parametre olarak yarıçapı girilen çemberin çevresini hesaplar.
         /// </summary>
         /// <param name="r">Yarıçap</param>
         /// <returns>Çemberin çevresi</returns>
