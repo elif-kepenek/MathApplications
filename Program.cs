@@ -4,11 +4,8 @@
     {
         static void Main (string[] args) {
 
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("1'den {0}'e kadar olan çift sayıların toplamı: {1}", n, Number.SumOfEvenNumbersUpTo_n(n));
-            Console.WriteLine("1'den {0}'e kadar olan çift sayıların toplamı: {1}", n, Number.SumOfEvenNumbersUpTo_n1(n));
-            Console.WriteLine("1'den {0}'e kadar olan çift sayıların toplamı: {1}", n, Number.FormulaForSumOfEvenNumbersUpTo_n(n));
-            
+            double r = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("2*{0:F2}*{1:F2}={2:F2}", Circle.pi, r, Circle.PerimeterOfCircle(r));
         }
     }
     
