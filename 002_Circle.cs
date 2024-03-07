@@ -13,7 +13,7 @@ namespace MathAplications
         }
 
         /// <summary>
-        /// Parametre olarak yarıçapı girlen dairenin alanını hesaplar.
+        /// Parametre olarak yarıçapı girilen dairenin alanını hesaplar.
         /// </summary>
         /// <param name="r">Yarıçap</param>
         /// <returns>Dairenin alanı</returns>
@@ -22,7 +22,7 @@ namespace MathAplications
         }
 
         /// <summary>
-        /// Parametre olarak yarıçapı girlen dairenin alanını hesaplar.
+        /// Parametre olarak yarıçapı ve gördüğü açı girilen dairenin alanını hesaplar.
         /// </summary>
         /// <param name="r">Yarıçap</param>
         /// <param name="angle">Gördüğü açı</param>
