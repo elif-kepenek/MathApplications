@@ -91,6 +91,11 @@ namespace MathAplications
             return total;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayıya kadar olan sayıların toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Sayılar toplamı</returns>
         public static int SumOfNumbersUpTo_n (int n) {
             int t = 0;
             for (int i = 1; i <= n; i++)
@@ -98,10 +103,20 @@ namespace MathAplications
             return t;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayıya kadar olan sayıların formül ile toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Sayılar toplamı</returns>
         public static int FormulaSumOfNumbersUpTo_n (int n) {
             return n * (n + 1) / 2;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayıya kadar olan tek sayıların toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Tek sayıların toplamı</returns>
         public static int SumOfOddNumbersUpTo_n (int n) {
             int t = 0;
             for (int i = 1; i <= n; i++)
@@ -114,6 +129,11 @@ namespace MathAplications
             return t;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayıya kadar olan tek sayıların toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Tek sayıların toplamı</returns>
         public static int SumOfOddNumbersUpTo_n1 (int n) {
             int t = 0;
             for (int i = 1; i <= n; i += 2)
@@ -123,12 +143,22 @@ namespace MathAplications
             return t;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayıya kadar olan tek sayıların formül ile toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Tek sayıların toplamı</returns>
         public static int FormulaForSumOfOddNumbersUpTo_n (int n) {
             n += 1;
             n = n / 2;
             return n * n;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayıya kadar olan çift sayıların toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Çift sayıların toplamı</returns>
         public static int SumOfEvenNumbersUpTo_n (int n) {
             int t = 0;
             for (int i = 2; i <= n; i++)
@@ -141,6 +171,11 @@ namespace MathAplications
             return t;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayıya kadar olan çift sayıların toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Çift sayıların toplamı</returns>
         public static int SumOfEvenNumbersUpTo_n1 (int n) {
             int t = 0;
             for (int i = 2; i <= n; i += 2)
@@ -150,6 +185,11 @@ namespace MathAplications
             return t;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayıya kadar olan çift sayıların formül ile toplamını döner.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Çift sayıların toplamı</returns>
         public static int FormulaForSumOfEvenNumbersUpTo_n (int n) {
             n = n / 2;
             return n * (n + 1);
