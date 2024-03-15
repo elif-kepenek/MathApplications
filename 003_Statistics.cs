@@ -51,9 +51,9 @@ namespace MathAplications
         }
 
         /// <summary>
-        /// 
+        /// Veriler aritmetik ortalamasını hesaplar.
         /// </summary>
-        /// <param name="datas"></param>
+        /// <param name="datas">Dizi</param>
         /// <returns></returns>
         public static double ArithmeticMean (int[] datas) {
             double total = 0;
