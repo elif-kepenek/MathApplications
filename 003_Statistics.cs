@@ -12,7 +12,7 @@ namespace MathAplications
                 numbers[i] = new Random().Next(0, 100);
                 Console.Write("{0, 3}", numbers[i]);
             }
-            Console.WriteLine("\nDizinin en büyük elemanı: {0}", BiggestData(numbers));
+            Console.WriteLine("\nDizinin en büyük elemanı: {0} \nDizinin en küçük elemanı: {1}", BiggestData(numbers), SmallestData(numbers));
         }
 
         public static int BiggestData (int[] numbers) {
@@ -25,6 +25,18 @@ namespace MathAplications
                 }
             }
             return bigData;
+        }
+
+        public static int SmallestData (int[] numbers) {
+            int smallData = numbers[0];
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] < smallData)
+                {
+                    smallData = numbers[i];
+                }
+            }
+            return smallData;
         }
 
     }
