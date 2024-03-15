@@ -12,6 +12,20 @@ namespace MathAplications
                 numbers[i] = new Random().Next(0, 100);
                 Console.Write("{0, 3}", numbers[i]);
             }
+            Console.WriteLine("\nDizinin en büyük elemanı: {0}", BiggestData(numbers));
         }
+
+        public static int BiggestData (int[] numbers) {
+            int bigData = numbers[0];
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] > bigData)
+                {
+                    bigData = numbers[i];
+                }
+            }
+            return bigData;
+        }
+
     }
 }
