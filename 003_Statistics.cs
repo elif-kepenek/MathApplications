@@ -4,18 +4,16 @@ namespace MathAplications
         /// <summary>
         /// Girilen sayı kadar elamanlı 1-100 arasındaki sayılardan dizi oluşturur.
         /// </summary>
-        public static void CreateData () {
-            Console.WriteLine("Kaç veriden oluşacak? ");
-            int limit = Convert.ToInt32(Console.ReadLine());
+        public int[] CreateData (int n) {
+          
+            int[] numbers = new int[n];
 
-            int[] numbers = new int[limit];
-
-            for (int i = 0; i < limit; i++)
+            for (int i = 0; i < n; i++)
             {
                 numbers[i] = new Random().Next(0, 100);
                 Console.Write("{0, 3}", numbers[i]);
             }
-            Console.WriteLine("\nDizinin en büyük elemanı: {0} \nDizinin en küçük elemanı: {1}", BiggestData(numbers), SmallestData(numbers));
+            return numbers;
         }
 
         /// <summary>
@@ -50,6 +48,20 @@ namespace MathAplications
                 }
             }
             return smallData;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="datas"></param>
+        /// <returns></returns>
+        public static double ArithmeticMean (int[] datas) {
+            double total = 0;
+            for (int i = 0; i < datas.Length; i++)
+            {
+                total += datas[i];
+            }
+            return total / datas.Length;
         }
 
     }
