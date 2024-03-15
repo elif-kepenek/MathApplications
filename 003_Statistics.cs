@@ -23,13 +23,13 @@ namespace MathAplications
         /// </summary>
         /// <param name="numbers"></param>
         /// <returns></returns>
-        public static int BiggestData (int[] numbers) {
-            int bigData = numbers[0];
-            for (int i = 0; i < numbers.Length; i++)
+        public static int BiggestData (int[] datas) {
+            int bigData = datas[0];
+            for (int i = 0; i < datas.Length; i++)
             {
-                if (numbers[i] > bigData)
+                if (datas[i] > bigData)
                 {
-                    bigData = numbers[i];
+                    bigData = datas[i];
                 }
             }
             return bigData;
@@ -40,13 +40,13 @@ namespace MathAplications
         /// </summary>
         /// <param name="numbers"></param>
         /// <returns></returns>
-        public static int SmallestData (int[] numbers) {
-            int smallData = numbers[0];
-            for (int i = 0; i < numbers.Length; i++)
+        public static int SmallestData (int[] datas) {
+            int smallData = datas[0];
+            for (int i = 0; i < datas.Length; i++)
             {
-                if (numbers[i] < smallData)
+                if (datas[i] < smallData)
                 {
-                    smallData = numbers[i];
+                    smallData = datas[i];
                 }
             }
             return smallData;
