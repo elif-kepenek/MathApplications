@@ -5,9 +5,14 @@
         static void Main (string[] args) {
             Console.WriteLine("Kaç veriden oluşacak? ");
             int n = Convert.ToInt32(Console.ReadLine());
-            int[] datas = new Statistics().CreateData(n);
-            Console.WriteLine("\nTek sayıların sayısı: {0}", Statistics.NumberOfOddNumbers(datas));
-            Console.WriteLine("\nÇift sayıların sayısı: {0}", Statistics.NumberOfEvenNumbers(datas));
+            int[] newArray = new Statistics().CreateData(n);
+
+            Statistics array = new Statistics();
+
+            int[] arrayOfOddNumbers = array.CreateOddArray(newArray);
+            Statistics.ArrayPrint(arrayOfOddNumbers);
+            Console.WriteLine("\nTek sayıların sayısı: {0, 5}", Statistics.NumberOfOddNumbers(arrayOfOddNumbers));
+
         }
     }
     

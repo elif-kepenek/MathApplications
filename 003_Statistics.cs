@@ -131,5 +131,24 @@ namespace MathAplications
             return numberOfEvenNumbers;
         }
 
+        /// <summary>
+        /// Parametre olarak gelen dizinin içindeki tek sayılardan yeni bir dizi döner.
+        /// </summary>
+        /// <param name="datas">Dizi</param>
+        /// <returns>Tek sayılardan dizi</returns>
+        public int[] CreateOddArray (int[] datas) {
+            int[] oddArray = new int[NumberOfOddNumbers(datas)];
+            int y = 0;
+            for (int i = 0; i < datas.Length; i++)
+            {
+                if (datas[i] % 2 == 1)
+                {
+                    oddArray[y] = datas[i];
+                    y++;
+                }
+            }
+            return oddArray;
+        }
+
     }
 }
