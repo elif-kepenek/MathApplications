@@ -64,5 +64,25 @@ namespace MathAplications
             return total / datas.Length;
         }
 
+        /// <summary>
+        /// Parametre olarak aldığı dizinin standart sapmasını hesaplar.
+        /// </summary>
+        /// <param name="datas">Dizi</param>
+        /// <returns>Standart sapma</returns>
+        public static double StandardDeviation (int[] datas) {
+            
+            double arithmeticMean = ArithmeticMean(datas);
+            double t = 0, f = 0;
+
+            for (int i = 0; i < datas.Length; i++)
+            {
+                f = datas[i] - arithmeticMean;
+                t += Math.Pow(f, 2);
+            }
+
+            return Math.Sqrt(t / (datas.Length - 1));
+            
+        }
+
     }
 }
