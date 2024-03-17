@@ -17,6 +17,19 @@ namespace MathAplications
         }
 
         /// <summary>
+        /// Parametre olarak aldığı diziyi ekrana yazdırır.
+        /// </summary>
+        /// <param name="datas">Dizi</param>
+        public static void ArrayPrint (int[] datas) {
+            Console.WriteLine("");
+            for (int i = 0; i < datas.Length; i++)
+            {
+                Console.Write("{0, 3}", datas[i]);
+            }
+            Console.WriteLine("");
+        }
+
+        /// <summary>
         /// Sayılardan oluşan dizinin en büyük elemanını döner.
         /// </summary>
         /// <param name="numbers"></param>
