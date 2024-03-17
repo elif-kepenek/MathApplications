@@ -7,6 +7,7 @@
             int n = Convert.ToInt32(Console.ReadLine());
             int[] datas = new Statistics().CreateData(n);
             Console.WriteLine("\nTek sayıların sayısı: {0}", Statistics.NumberOfOddNumbers(datas));
+            Console.WriteLine("\nÇift sayıların sayısı: {0}", Statistics.NumberOfEvenNumbers(datas));
         }
     }
     

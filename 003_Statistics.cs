@@ -101,5 +101,22 @@ namespace MathAplications
             return numberOfOddNumbers;
         }
 
+        /// <summary>
+        /// Parametre olarak aldığı dizinin içindeki çift sayıların sayısını döner.
+        /// </summary>
+        /// <param name="datas">Dizi</param>
+        /// <returns>Çift sayıların sayısı</returns>
+        public static int NumberOfEvenNumbers (int[] datas) {
+            int numberOfEvenNumbers = 0;
+            for (int i = 0; i < datas.Length; i++)
+            {
+                if (datas[i] % 2 == 0)
+                {
+                    numberOfEvenNumbers++;
+                }
+            }
+            return numberOfEvenNumbers;
+        }
+
     }
 }
