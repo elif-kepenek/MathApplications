@@ -84,5 +84,22 @@ namespace MathAplications
             
         }
 
+        /// <summary>
+        /// Parametre olarak aldığı dizinin içindeki tek sayıların sayısını döner.
+        /// </summary>
+        /// <param name="datas">Dizi</param>
+        /// <returns>Tek sayıların sayısı</returns>
+        public static int NumberOfOddNumbers (int[] datas) {
+            int numberOfOddNumbers = 0;
+            for (int i = 0; i < datas.Length; i++)
+            {
+                if (datas[i] % 2 == 1)
+                {
+                    numberOfOddNumbers++;
+                }
+            }
+            return numberOfOddNumbers;
+        }
+
     }
 }
