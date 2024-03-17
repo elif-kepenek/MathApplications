@@ -11,7 +11,6 @@ namespace MathAplications
             for (int i = 0; i < n; i++)
             {
                 numbers[i] = new Random().Next(0, 100);
-                Console.Write("{0, 3}", numbers[i]);
             }
             return numbers;
         }
@@ -148,6 +147,25 @@ namespace MathAplications
                 }
             }
             return oddArray;
+        }
+
+        /// <summary>
+        /// Parametre olarak gelen dizinin içindeki çift sayılardan yeni bir dizi döner.
+        /// </summary>
+        /// <param name="datas">Dizi</param>
+        /// <returns>Çift sayılardan dizi</returns>
+        public int[] CreateEvenArray (int[] datas) {
+            int[] evenArray = new int[NumberOfEvenNumbers(datas)];
+            int y = 0;
+            for (int i = 0; i < datas.Length; i++)
+            {
+                if (datas[i] % 2 == 0)
+                {
+                    evenArray[y] = datas[i];
+                    y++;
+                }
+            }
+            return evenArray;
         }
 
     }
