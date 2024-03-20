@@ -194,5 +194,20 @@ namespace MathAplications
             n = n / 2;
             return n * (n + 1);
         }
+
+        /// <summary>
+        /// Parametre olarak aldığı sayıların üslü ifadesini döner.
+        /// </summary>
+        /// <param name="a">Taban</param>
+        /// <param name="exponent">Üs</param>
+        /// <returns>Üslü sayı</returns>
+        public static double Exponentiation (double a, double exponent) {
+            double result = 1;
+            for (int i = 0; i < exponent; i++)
+            {
+                result *= a;
+            }
+            return result;
+        }
     }
 }
