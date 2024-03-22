@@ -3,7 +3,8 @@
     class Program
     {
         static void Main (string[] args) {
-            Console.WriteLine("{0:F2}", Number.Exponentiation(2.2,3));
+            int[] integerFactorization = NumberTheory.IntegerFactorization(60);
+            Statistics.ArrayPrint(integerFactorization);
         }
     }
     
