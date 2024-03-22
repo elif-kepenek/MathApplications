@@ -48,7 +48,19 @@ namespace MathAplications
 
             return primeFactorization;
         }
-    
+
+        public static int SumOfPrimeFactors (int n) {
+            int[] primeFactorization = PrimeFactorization(n);
+            int total = 0;
+
+            for (int i = 0; i < primeFactorization.Length; i++)
+            {
+                total += primeFactorization[i];
+            }            
+            
+            return total;
+        }
+
 
     }
 }
