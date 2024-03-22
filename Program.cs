@@ -3,7 +3,7 @@
     class Program
     {
         static void Main (string[] args) {
-            Console.WriteLine(NumberTheory.SumOfPrimeFactors(60));
+            Console.WriteLine(NumberTheory.MultiplicationOfPrimeFactors(180));
         }
     }
     

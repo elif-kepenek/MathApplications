@@ -61,6 +61,16 @@ namespace MathAplications
             return total;
         }
 
+        public static int MultiplicationOfPrimeFactors (int n) {
+            int[] primeFactorization = PrimeFactorization(n);
+            int multiplication = 1;
+
+            for (int i = 0; i < primeFactorization.Length; i++)
+            {
+                multiplication *= primeFactorization[i];
+            }
+            return multiplication;
+        }
 
     }
 }
