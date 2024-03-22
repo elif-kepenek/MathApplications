@@ -7,7 +7,7 @@ namespace MathAplications
         /// </summary>
         /// <param name="n">Sayı</param>
         /// <returns>Asal çarpanlar</returns>
-        public static int[] IntegerFactorization (int n) {
+        public static int[] PrimeFactorization (int n) {
             string multiplierList = "";
             int i = 2;
             while (n > 1)
@@ -39,14 +39,16 @@ namespace MathAplications
             }
 
             multiplier = y.Split(",");
-            int[] integerFactorization = new int[multiplier.Length];
+            int[] primeFactorization = new int[multiplier.Length];
 
-            for (i = 0; i < integerFactorization.Length; i++)
+            for (i = 0; i < primeFactorization.Length; i++)
             {
-                integerFactorization[i] = Convert.ToInt32(multiplier[i]);
+                primeFactorization[i] = Convert.ToInt32(multiplier[i]);
             }
 
-            return integerFactorization;
+            return primeFactorization;
         }
+    
+
     }
 }
