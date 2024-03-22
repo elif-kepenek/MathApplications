@@ -72,5 +72,40 @@ namespace MathAplications
             return multiplication;
         }
 
+        /// <summary>
+        /// Ortak katların en küçüğünü hesaplar.
+        /// </summary>
+        /// <param name="s1">Sayı 1</param>
+        /// <param name="s2">Sayı 2</param>
+        /// <returns>OKEK</returns>
+        public static int LeastCommonMultiple (int s1, int s2) {
+            int result = 1;
+            while (s1 != 1 && s2 != 1)
+            {
+                int divide = 2;
+
+                for (int i = 1; i <= (s1 > s2 ? s1 : s2); i++)
+                {
+                    if (s1 % divide == 0 || s2 % divide == 0)
+                    {
+                        result *= divide;
+                        if (s1 % divide == 0)
+                        {
+                            s1 = s1 / divide;
+                        }
+                        if (s2 % divide == 0)
+                        {
+                            s2 = s2 / divide;
+                        }
+                    } else
+                    {
+                        divide++;
+                    }
+                }
+            }
+
+            return result;
+        }
+
     }
 }
