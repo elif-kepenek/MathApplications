@@ -80,26 +80,31 @@ namespace MathAplications
         /// <returns>OKEK</returns>
         public static int LeastCommonMultiple (int s1, int s2) {
             int result = 1;
-            while (s1 != 1 && s2 != 1)
+            if (s1 == s2 + 1 || s2 == s1 + 1)
             {
-                int divide = 2;
+                result = s1 * s2;
+            } else {
 
-                for (int i = 1; i <= (s1 > s2 ? s1 : s2); i++)
+                while (s1 != 1 && s2 != 1)
                 {
-                    if (s1 % divide == 0 || s2 % divide == 0)
+                    int divide = 2;
+
+                    for (int i = 1; i <= (s1 > s2 ? s1 : s2); i++)
                     {
-                        result *= divide;
-                        if (s1 % divide == 0)
+                        if (s1 % divide == 0 || s2 % divide == 0)
                         {
-                            s1 = s1 / divide;
-                        }
-                        if (s2 % divide == 0)
-                        {
-                            s2 = s2 / divide;
-                        }
-                    } else
-                    {
+                            result *= divide;
+                            if (s1 % divide == 0)
+                            {
+                                s1 = s1 / divide;
+                            }
+                            if (s2 % divide == 0)
+                            {
+                                s2 = s2 / divide;
+                            }
+                        } else {
                         divide++;
+                        }
                     }
                 }
             }
