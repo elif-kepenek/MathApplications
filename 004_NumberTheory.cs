@@ -112,5 +112,44 @@ namespace MathAplications
             return result;
         }
 
+        /// <summary>
+        /// Ortak bölenlerin en büyüğünü hesaplar.
+        /// </summary>
+        /// <param name="s1">Sayı 1</param>
+        /// <param name="s2">Sayı 2</param>
+        /// <returns>OBEB</returns>
+        public static int GreatestCommonDivisor (int s1, int s2) {
+            int result = 1;
+            int divide = 2;
+            if (s1 == s2)
+            {
+                result = s1;
+            } else
+            {
+                for (int i = 2; i < (s1 > s2 ? s1 : s2); i++)
+                {
+                    if (s1 % divide == 0 || s2 % divide == 0)
+                    {
+                        if (s1 % divide == 0 && s2 % divide == 0)
+                        {
+                            result *= divide;
+                        }
+                        if (s1 % divide == 0)
+                        {
+                            s1 /= divide;
+                        }
+                        if (s2 % divide == 0)
+                        {
+                            s2 /= divide;
+                        }
+                    } else
+                    {
+                        divide++;
+                    }
+                }
+            }
+            
+            return result;
+        }
     }
 }
