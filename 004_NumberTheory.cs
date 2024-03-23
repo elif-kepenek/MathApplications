@@ -79,6 +79,9 @@ namespace MathAplications
         /// <param name="s2">Sayı 2</param>
         /// <returns>OKEK</returns>
         public static int LeastCommonMultiple (int s1, int s2) {
+            
+            // TO DO : eksikler giderilecek
+            
             int result = 1;
             if (s1 == s2 + 1 || s2 == s1 + 1)
             {
