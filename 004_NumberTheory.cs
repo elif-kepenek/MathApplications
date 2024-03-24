@@ -3,7 +3,7 @@ namespace MathAplications
     public class NumberTheory
     {
         /// <summary>
-        /// Parametre olarak girilen sayının asal çarpnlarını döner.
+        /// Parametre olarak girilen sayının asal çarpanlarını döner.
         /// </summary>
         /// <param name="n">Sayı</param>
         /// <returns>Asal çarpanlar</returns>
@@ -49,6 +49,11 @@ namespace MathAplications
             return primeFactorization;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayının asal çarpanlarını toplar.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Asal çarpanların toplamı</returns>
         public static int SumOfPrimeFactors (int n) {
             int[] primeFactorization = PrimeFactorization(n);
             int total = 0;
@@ -61,6 +66,11 @@ namespace MathAplications
             return total;
         }
 
+        /// <summary>
+        /// Parametre olarak girilen sayının asal çarpanlarını çarpar.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Asal çarpanların çarpımı</returns>
         public static int MultiplicationOfPrimeFactors (int n) {
             int[] primeFactorization = PrimeFactorization(n);
             int multiplication = 1;
@@ -155,6 +165,11 @@ namespace MathAplications
             return result;
         }
 
+        /// <summary>
+        /// Girilen sayının faktöriyelini hesaplar.
+        /// </summary>
+        /// <param name="n">Sayı</param>
+        /// <returns>Faktöriyel</returns>
         public static int Factorial (int n) {
             if (n <= 1)
             {
@@ -168,5 +183,6 @@ namespace MathAplications
             
             return f;
         }
+    
     }
 }
