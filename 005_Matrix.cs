@@ -50,5 +50,15 @@ namespace MathAplications
         public static int[,] ZeroMatrix (int row, int column) {
             return CreateMatrix(row, column, 0, 0);
         }
+
+        /// <summary>
+        /// Birler matrisi oluşturur.
+        /// </summary>
+        /// <param name="row">Satır</param>
+        /// <param name="column">Sütun</param>
+        /// <returns>Birler matrisi</returns>
+        public static int[,] MatrixOfOnes (int row, int column) {
+            return CreateMatrix(row, column, 1, 1);
+        }
     }
 }
