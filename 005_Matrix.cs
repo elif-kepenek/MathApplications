@@ -60,5 +60,23 @@ namespace MathAplications
         public static int[,] MatrixOfOnes (int row, int column) {
             return CreateMatrix(row, column, 1, 1);
         }
+
+        /// <summary>
+        /// Köşegen (Diagonal) matris oluşturur.
+        /// </summary>
+        /// <param name="dimension">Satır ve sütun sayısı</param>
+        /// <param name="min">Min değer</param>
+        /// <param name="max">Max değer</param>
+        /// <returns>Diagonal matris</returns>
+        public static int[,] DiagonalMatrix (int dimension = 3, int min = 1, int max = 9) {
+            int[,] M = ZeroMatrix(dimension, dimension);
+
+            for (int i = 0; i < dimension; i++)
+            {
+                M[i,i] = new Random().Next(min, max);
+            }
+
+            return M;
+        }
     }
 }
