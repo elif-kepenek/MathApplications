@@ -4,7 +4,7 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.CreateMatrix(4, 6, 2, 20);
+            int[,] Matris = Matrix.ZeroMatrix(3,4);
             Matrix.PrintMatrix(Matris);
 
         }

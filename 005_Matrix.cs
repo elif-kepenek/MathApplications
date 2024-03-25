@@ -40,5 +40,15 @@ namespace MathAplications
                 Console.WriteLine();
             }            
         }
+
+        /// <summary>
+        /// Sıfır matris oluşturur.
+        /// </summary>
+        /// <param name="row">Satır</param>
+        /// <param name="column">Sütun</param>
+        /// <returns>Sıfır matris</returns>
+        public static int[,] ZeroMatrix (int row, int column) {
+            return CreateMatrix(row, column, 0, 0);
+        }
     }
 }
