@@ -97,5 +97,9 @@ namespace MathAplications
         public static bool IsItSquareMatrix (int[,] M) {
             return M.GetLength(0) == M.GetLength(1) ? true : false;
         }
+
+        public static int[,] IdentityMatrix (int dimension = 3) {
+            return ScalarMatrix(dimension, 1);
+        }
     }
 }
