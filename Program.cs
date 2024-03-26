@@ -4,7 +4,7 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.DiagonalMatrix(4);
+            int[,] Matris = Matrix.ScalarMatrix(4, 3);
             Matrix.PrintMatrix(Matris);
 
         }

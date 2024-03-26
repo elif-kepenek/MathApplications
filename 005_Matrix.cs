@@ -78,5 +78,15 @@ namespace MathAplications
 
             return M;
         }
+
+        /// <summary>
+        /// Skaler matris oluşturur.
+        /// </summary>
+        /// <param name="dimension">Satır ve sütun</param>
+        /// <param name="scalar">Köşegenler üzerindeki değer</param>
+        /// <returns>Skaler matris</returns>
+        public static int[,] ScalarMatrix (int dimension = 3, int scalar = 3) {
+            return DiagonalMatrix(dimension, scalar, scalar);
+        }
     }
 }
