@@ -107,11 +107,6 @@ namespace MathAplications
             return ScalarMatrix(dimension, 1);
         }
 
-        /// <summary>
-        /// Birim matris olup olmadığını kontrol eder.
-        /// </summary>
-        /// <param name="M">Matris</param>
-        /// <returns>Birim matris ise true birim matris değil ise false</returns>
         public static bool IsItIdentityMatrix (int[,] M) {
             bool control = true;
             for (int i = 0; (i < M.GetLength(0) && control == true); i++)
