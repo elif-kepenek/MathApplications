@@ -98,8 +98,40 @@ namespace MathAplications
             return M.GetLength(0) == M.GetLength(1) ? true : false;
         }
 
+        /// <summary>
+        /// Birim matris oluşturur.
+        /// </summary>
+        /// <param name="dimension">Satır ve sütun</param>
+        /// <returns>Birim matris</returns>
         public static int[,] IdentityMatrix (int dimension = 3) {
             return ScalarMatrix(dimension, 1);
         }
+
+        public static bool IsItIdentityMatrix (int[,] M) {
+            bool control = true;
+            for (int i = 0; (i < M.GetLength(0) && control == true); i++)
+            {
+                for (int j = 0; j < M.GetLength(1); j++)
+                {
+                    // diagonal elemanlar dışındakiler 0 mı?
+                    if (M[i,j] != 0 && i != j)
+                    {
+                        control = false;
+                        break;
+                    }
+                    // diagonal elemanlar 1 mi?
+                    else
+                    {
+                        if (M[i,j] != 1 && i == j)
+                        {
+                            control = false;
+                            break;
+                        }
+                    }
+                }
+            }
+            return control;
+        }
+
     }
 }
