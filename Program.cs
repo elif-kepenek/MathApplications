@@ -4,8 +4,9 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.ScalarMatrix(4, 3);
+            int[,] Matris = Matrix.MatrixOfOnes(5, 3);
             Matrix.PrintMatrix(Matris);
+            Console.WriteLine("{0}", Matrix.IsItSquareMatrix(Matris) ? "Kare matris" : "Kare matris değil");
 
         }
     }

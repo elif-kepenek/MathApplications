@@ -88,5 +88,14 @@ namespace MathAplications
         public static int[,] ScalarMatrix (int dimension = 3, int scalar = 3) {
             return DiagonalMatrix(dimension, scalar, scalar);
         }
+        
+        /// <summary>
+        /// Kare matris olup olmadığını kontrol eder.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Kare matris ise true değil ise false</returns>
+        public static bool IsItSquareMatrix (int[,] M) {
+            return M.GetLength(0) == M.GetLength(1) ? true : false;
+        }
     }
 }
