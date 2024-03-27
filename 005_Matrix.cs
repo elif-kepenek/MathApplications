@@ -183,5 +183,23 @@ namespace MathAplications
             return total;   
         }
 
+        /// <summary>
+        /// Girilen matrisin transpozunu alır.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Tranpoz</returns>
+        public static int[,] Transposition (int[,] M) {
+            int[,] transpose = new int[M.GetLength(1), M.GetLength(0)];
+
+            for (int i = 0; i < transpose.GetLength(0); i++)
+            {
+                for (int j = 0; j < transpose.GetLength(1); j++)
+                {
+                    transpose[i, j] = M[j, i];
+                }
+            }
+            return transpose;
+        }
+
     }
 }
