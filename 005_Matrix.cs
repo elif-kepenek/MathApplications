@@ -162,6 +162,11 @@ namespace MathAplications
 
         }
 
+        /// <summary>
+        /// Girilen matrisin izini hesaplar
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Matrisin izi</returns>
         public static int Trace (int[,] M) {
             int total = 0;
             if (IsItSquareMatrix(M))
