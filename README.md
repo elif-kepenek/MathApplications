@@ -1,10 +1,10 @@
 <div align = "center">
 
-# Math Aplications - C#
+# Math Applications - C#
 
 </div>
 
-## List of Math Aplications
+## List of Math Applications
 
 * [MathApplications](./)
     
