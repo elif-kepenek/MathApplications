@@ -138,5 +138,29 @@ namespace MathAplications
             return control;
         }
 
+        /// <summary>
+        /// Diagonal elemanların listesini dizi olarak döner.
+        /// </summary>
+        /// <param name="M">Dizi</param>
+        /// <returns>Diagonal elemanlar</returns>
+        public static int[] DiagonalElements (int[,] M) {
+            
+            if (IsItSquareMatrix(M))
+            {
+                int[] datas = new int[M.GetLength(0)];
+                for (int i = 0; i < M.GetLength(0); i++)
+                {
+                    datas[i] = M[i, i];
+                }
+                return datas;
+            }
+            else
+            {
+                Console.WriteLine("Lütfen kare matris giriniz.");
+                return new int[1];
+            }
+
+        }
+
     }
 }

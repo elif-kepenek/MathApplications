@@ -8,7 +8,9 @@
 
             Matrix.PrintMatrix(Matris);
 
-            Console.WriteLine("{0}", Matrix.IsItIdentityMatrix(Matris) ? "Birim matris" : "Birim matris değil");
+            int[] DiagonalElements = Matrix.DiagonalElements(Matris);
+
+            Statistics.ArrayPrint(DiagonalElements);
         }
     }
     
