@@ -162,5 +162,21 @@ namespace MathAplications
 
         }
 
+        public static int Trace (int[,] M) {
+            int total = 0;
+            if (IsItSquareMatrix(M))
+            {
+                int[] diagonalElements = DiagonalElements(M);
+                for (int i = 0; i < M.GetLength(0); i++)
+                {
+                    total += M[i, i];
+                }
+            } else
+            {
+                Console.WriteLine("Lütfen kare matris giriniz.");
+            }
+            return total;   
+        }
+
     }
 }

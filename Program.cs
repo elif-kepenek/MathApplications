@@ -4,13 +4,11 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.DiagonalMatrix(5);
+            int[,] Matris = Matrix.CreateMatrix(5,5);
 
             Matrix.PrintMatrix(Matris);
 
-            int[] DiagonalElements = Matrix.DiagonalElements(Matris);
-
-            Statistics.ArrayPrint(DiagonalElements);
+            Console.WriteLine(Matrix.Trace(Matris));
         }
     }
     
