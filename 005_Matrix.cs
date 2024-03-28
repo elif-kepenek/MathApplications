@@ -274,19 +274,36 @@ namespace MathAplications
             return result;
         }
 
+        /// <summary>
+        /// Matrisin determinantını hesaplar.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Determinant</returns>
         public static int Determinant (int[,] M) {
 
             int d = -1;
             if (IsItSquareMatrix(M))
             {
-                d = M[0,0] * M[1,1] - M[0,1] * M[1,0];
+                if (M.Length == 4)
+                {
+                    d = M[0,0] * M[1,1] - M[0,1] * M[1,0];
+                } else if (M.Length == 9)
+                {
+                    d = M[0,0] * (M[1,1] * M[2,2] - M[1,2] * M[2,1]) - 
+                        M[0,1] * (M[1,0] * M[2,2] - M[2,0] * M[1,2]) + 
+                        M[0,2] * (M[1,0] * M[2,1] - M[1,1] * M[2,0]);
+                } else
+                {
+                    Helper.PrintError("Tanımlı boyut yok!");
+                }
+            return d;
+
             } else
             {
                 Helper.PrintError("Kare matris olmalı!");
                 return -1;
             }
             
-            return d;
         }
 
     }
