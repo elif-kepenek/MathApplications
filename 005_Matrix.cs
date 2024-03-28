@@ -244,6 +244,12 @@ namespace MathAplications
             
         }
 
+        /// <summary>
+        /// Matrislerin eşit olup olmadığını kontrol eder.
+        /// </summary>
+        /// <param name="M">Matris 1</param>
+        /// <param name="N">Matris 2</param>
+        /// <returns>Eşit ise true eşit değilse false</returns>
         public static bool IsItEqualMatrix (int[,] M, int[,] N) {
             bool result = true;
 
