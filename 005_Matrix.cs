@@ -324,6 +324,23 @@ namespace MathAplications
             return M;
         }
 
+        /// <summary>
+        /// Girilen matrisin elemanlarının toplamını döner.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Elemanlar toplamı</returns>
+        public static int SumOfElements (int[,] M) {
+            int total = 0;
+            for (int i = 0; i < M.GetLength(0); i++)
+            {
+                for (int j = 0; j < M.GetLength(1); j++)
+                {
+                    total += M[i,j];
+                }
+            }
+            return total;
+        }
+
 
     }
 }

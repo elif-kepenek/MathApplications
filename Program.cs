@@ -8,10 +8,7 @@
 
             Matrix.PrintMatrix(Matris);
 
-            int[,] X = Matrix.ScalarMultiplication(2,Matris);
-
-            Console.WriteLine("Skaler çarpım: ");
-            Matrix.PrintMatrix(X);
+            Console.WriteLine("Elemanlar toplamı: {0}", Matrix.SumOfElements(Matris));
 
         }
     }
