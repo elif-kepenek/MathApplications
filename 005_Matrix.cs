@@ -201,6 +201,13 @@ namespace MathAplications
             return transpose;
         }
 
+        /// <summary>
+        /// Girilen matrisin değerleriyle yeni satır ve sütun bilgisi girilen matris oluşturur.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <param name="newRow">Yeni satır</param>
+        /// <param name="newColumn">Yeni sütun</param>
+        /// <returns>Yeniden şekillendirilmiş matris</returns>
         public static int[,] Reshape (int[,] M, int newRow, int newColumn) {
             if (M.Length == newRow * newColumn)
             {
