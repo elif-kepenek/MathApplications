@@ -8,7 +8,11 @@
 
             Matrix.PrintMatrix(Matris);
 
-            Console.WriteLine("{0}", Matrix.Determinant(Matris));
+            int[,] X = Matrix.ScalarMultiplication(2,Matris);
+
+            Console.WriteLine("Skaler çarpım: ");
+            Matrix.PrintMatrix(X);
+
         }
     }
     

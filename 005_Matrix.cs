@@ -306,5 +306,24 @@ namespace MathAplications
             
         }
 
+        /// <summary>
+        /// Skaler çarpımını döner.
+        /// </summary>
+        /// <param name="c">Skaler sayı</param>
+        /// <param name="M">Matris</param>
+        /// <returns>Skaler çarpım</returns>
+        public static int[,] ScalarMultiplication (int c, int[,] M) {
+            
+            for (int i = 0; i < M.GetLength(0); i++)
+            {
+                for (int j = 0; j < M.GetLength(1); j++)
+                {
+                    M[i,j] = c * M[i,j];
+                }
+            }
+            return M;
+        }
+
+
     }
 }
