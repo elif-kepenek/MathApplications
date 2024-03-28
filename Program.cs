@@ -4,13 +4,12 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.CreateMatrix(4,3);
+            int[,] M = Matrix.DiagonalMatrix(3,1,1);
+            int[,] N = Matrix.DiagonalMatrix(3,1,1);
+            Matrix.PrintMatrix(M);
+            Matrix.PrintMatrix(N);
 
-            Matrix.PrintMatrix(Matris);
-
-            int[,] Y = Matrix.Reshape(Matris, 6, 3);
-
-            Matrix.PrintMatrix(Y);
+            Console.WriteLine("{0}", Matrix.IsItEqualMatrix(M, N) ? "Matrisler eşit" : "Matrisler eşit değil");
         }
     }
     

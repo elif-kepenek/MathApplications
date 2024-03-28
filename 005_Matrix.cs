@@ -244,5 +244,29 @@ namespace MathAplications
             
         }
 
+        public static bool IsItEqualMatrix (int[,] M, int[,] N) {
+            bool result = true;
+
+            if (M.GetLength(0) == N.GetLength(0) && M.GetLength(1) == N.GetLength(1))
+            {
+                for (int i = 0; i < M.GetLength(0); i++)
+                {
+                    for (int j = 0; j < M.GetLength(1); j++)
+                    {
+                        if (M[i, j] != N[i ,j])
+                        {
+                            result = false;
+                            break;
+                        }
+                    }
+                }
+            } else
+            {
+                result = false;
+            }
+            
+            return result;
+        }
+
     }
 }
