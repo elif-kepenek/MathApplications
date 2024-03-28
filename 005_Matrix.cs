@@ -363,6 +363,18 @@ namespace MathAplications
             return M;
         }
 
+        /// <summary>
+        /// Matrisin simetrik olup olmadığını döner.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Simetrik ise true değilse false</returns>
+        public static bool IsItSymmetricMatrix (int[,] M) {
+
+            int[,] N = Transposition(M);
+
+            return IsItEqualMatrix(M, N);
+        }
+
 
     }
 }
