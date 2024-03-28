@@ -274,5 +274,20 @@ namespace MathAplications
             return result;
         }
 
+        public static int Determinant (int[,] M) {
+
+            int d = -1;
+            if (IsItSquareMatrix(M))
+            {
+                d = M[0,0] * M[1,1] - M[0,1] * M[1,0];
+            } else
+            {
+                Helper.PrintError("Kare matris olmalı!");
+                return -1;
+            }
+            
+            return d;
+        }
+
     }
 }
