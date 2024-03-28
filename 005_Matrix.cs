@@ -201,5 +201,41 @@ namespace MathAplications
             return transpose;
         }
 
+        public static int[,] Reshape (int[,] M, int newRow, int newColumn) {
+            if (M.Length == newRow * newColumn)
+            {
+                int[] D = new int[M.Length];
+                int counter = 0;
+                int[,] Y = new int[newRow, newColumn];
+
+                for (int i = 0; i < M.GetLength(0); i++)
+                {
+                    for (int j = 0; j < M.GetLength(1); j++)
+                    {
+                        D[counter] = M[i,j];
+                        counter++;
+                    }
+                }
+                Statistics.ArrayPrint(D);
+
+                counter = 0;
+                for (int i = 0; i < Y.GetLength(0); i++)
+                {
+                    for (int j = 0; j < Y.GetLength(1); j++)
+                    {
+                        Y[i,j] = D[counter];
+                        counter++;
+                    }
+                }
+                return Y;
+
+            } else
+            {
+                Console.WriteLine("Bir hata oluştu.");
+                return new int[1,1];
+            }
+            
+        }
+
     }
 }
