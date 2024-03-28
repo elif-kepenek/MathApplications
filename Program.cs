@@ -4,11 +4,9 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.CreateMatrix(2,4);
+            int[,] Matris = Matrix.CreateSymmetricMatrix(5);
 
             Matrix.PrintMatrix(Matris);
-
-            Console.WriteLine("Elemanlar toplamı: {0}", Matrix.SumOfElements(Matris));
 
         }
     }
