@@ -4,7 +4,7 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.UpperTriangularMatrix(5, -3, 9);
+            int[,] Matris = Matrix.LowerTriangularMatrix(5, -3, 9);
 
             Matrix.PrintMatrix(Matris);
         }
