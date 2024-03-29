@@ -375,6 +375,37 @@ namespace MathAplications
             return IsItEqualMatrix(M, N);
         }
 
+        /// <summary>
+        /// Köşegen matris olup olmadığını kontrol eder.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Köşegen matris ise true değilse false</returns>
+        public static bool IsItDiagonalMatrix (int[,] M) {
+            bool result = true;
+            if (IsItSquareMatrix(M))
+            {
+                for (int i = 0; i < M.GetLength(0); i++)
+                {
+                    for (int j = 0; j < M.GetLength(1); j++)
+                    {
+                        if (!(M[i,j] == 0))
+                        {
+                            if (i != j)
+                            {
+                                result = false;
+                                break;
+                            }
+                        }
+                    }
+                }
+            } else
+            {
+                Helper.PrintError("Kare matris değil!");
+                result = false;
+            }
+            return result;
+        }
+
 
     }
 }
