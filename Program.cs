@@ -4,11 +4,9 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.DiagonalMatrix(5);
+            int[,] Matris = Matrix.UpperTriangularMatrix(5, -3, 9);
 
             Matrix.PrintMatrix(Matris);
-
-            Console.WriteLine("{0}", Matrix.IsItDiagonalMatrix(Matris) ? "Köşegen matris": "Köşegen matris değil");
         }
     }
     

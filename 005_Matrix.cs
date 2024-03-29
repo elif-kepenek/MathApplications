@@ -406,6 +406,28 @@ namespace MathAplications
             return result;
         }
 
+        /// <summary>
+        /// Üst üçgen matris oluşturur.
+        /// </summary>
+        /// <param name="dimension">Boyut</param>
+        /// <param name="min">Min değer</param>
+        /// <param name="max">Max değer</param>
+        /// <returns>Üst üçgen matris</returns>
+        public static int[,] UpperTriangularMatrix (int dimension = 3, int min = 1, int max = 9) {
+            int[,] M = DiagonalMatrix(dimension, min, max);
+
+            for (int i = 0; i < M.GetLength(0); i++)
+            {
+                for (int j = i; j < M.GetLength(1); j++)
+                {
+                    M[i,j] = new Random().Next(min, max);
+                }
+                
+            }
+            
+            return M;
+        }
+
 
     }
 }
