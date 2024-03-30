@@ -471,6 +471,28 @@ namespace MathAplications
             return M;
         }
 
+        /// <summary>
+        /// Matrisin alt üçgen matris olup olmadığını kontrol eder.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Alt üçgen matris ise true değilse false</returns>
+        public static bool IsItLowerTriangularMatrix (int[,] M) {
+            bool result = true;
+            
+            for (int i = 0; i < M.GetLength(0) - 1; i++)
+            {
+                for (int j = i + 1; j < M.GetLength(1); j++)
+                {
+                    if (!(M[i,j] == 0))
+                    {
+                        result = false;
+                        break;
+                    }
+                }
+            }
+            return result;
+        }
+
 
     }
 }
