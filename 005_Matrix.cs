@@ -429,6 +429,28 @@ namespace MathAplications
         }
 
         /// <summary>
+        /// Matrisin üst üçgen matris olup olmadığını döner.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        /// <returns>Üst üçgen ise true değilse false</returns>
+        public static bool IsItUpperTriangularMatrix (int[,] M) {
+            bool result = true;
+            for (int i = 1; i < M.GetLength(0); i++)
+            {
+                for (int j = 0; j <= i - 1 ; j++)
+                {
+                    if (!(M[i,j] == 0))
+                    {
+                        result = false;
+                        break;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
         /// Alt üçgen matris oluşturur.
         /// </summary>
         /// <param name="dimension">Boyut</param>

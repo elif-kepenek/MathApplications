@@ -4,9 +4,11 @@
     {
         static void Main (string[] args) {
             
-            int[,] Matris = Matrix.LowerTriangularMatrix(5, -3, 9);
+            int[,] Matris = Matrix.UpperTriangularMatrix();
 
             Matrix.PrintMatrix(Matris);
+
+            Console.WriteLine("{0}", Matrix.IsItUpperTriangularMatrix(Matris) ? "Üst üçgen matris" : "Üst üçgen matris değil");
         }
     }
     
