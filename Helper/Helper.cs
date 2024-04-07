@@ -28,6 +28,21 @@ namespace MathAplications.Helper
             Console.WriteLine("");
         }
 
+        /// <summary>
+        /// Parametre olarak aldığı matrisi yazdırır.
+        /// </summary>
+        /// <param name="M">Matris</param>
+        public static void ArrayPrint (int[,] M) {
+
+            for (int i = 0; i < M.GetLength(0); i++)
+            {
+                for (int j = 0; j < M.GetLength(1); j++)
+                {
+                    Console.Write("{0,3}", M[i,j]);
+                }
+                Console.WriteLine();
+            }            
+        }
         
     }
 }
