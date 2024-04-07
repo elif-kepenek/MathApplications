@@ -225,7 +225,7 @@ namespace MathAplications
                         counter++;
                     }
                 }
-                Statistics.ArrayPrint(D);
+                Helper.Helper.ArrayPrint(D);
 
                 counter = 0;
                 for (int i = 0; i < Y.GetLength(0); i++)
