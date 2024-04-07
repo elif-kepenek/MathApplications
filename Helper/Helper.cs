@@ -1,4 +1,4 @@
-namespace MathAplications
+namespace MathAplications.Helper
 {
     public class Helper {
 
