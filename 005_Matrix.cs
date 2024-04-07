@@ -1,3 +1,5 @@
+using MathAplications.Helper;
+
 namespace MathAplications
 {
     public class Matrix {
@@ -294,13 +296,13 @@ namespace MathAplications
                         M[0,2] * (M[1,0] * M[2,1] - M[1,1] * M[2,0]);
                 } else
                 {
-                    Helper.PrintError("Tanımlı boyut yok!");
+                    Helper.Helper.PrintError("Tanımlı boyut yok!");
                 }
             return d;
 
             } else
             {
-                Helper.PrintError("Kare matris olmalı!");
+                Helper.Helper.PrintError("Kare matris olmalı!");
                 return -1;
             }
             
@@ -400,7 +402,7 @@ namespace MathAplications
                 }
             } else
             {
-                Helper.PrintError("Kare matris değil!");
+                Helper.Helper.PrintError("Kare matris değil!");
                 result = false;
             }
             return result;
